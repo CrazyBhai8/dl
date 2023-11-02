@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+  border: border-box;
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(imges/banner.jpg);
+  background-position: 5px;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 4%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img {
+  width: 250px;
+}
+.nav-links ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 10px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 52px;
+}
+.text-box p {
+  font-size: 14px;
+  margin: 15px 0 30px;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 1px solid rgb(212, 112, 49);
+  background: rgb(211, 97, 26);
+  transition: 1.4s;
+}
+nav .fa {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 25px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background: rgb(0, 0, 0);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2;
+    transition: 1.1s;
+  }
+  nav .fa {
+    display: block;
+    background: rgba(255, 255, 255, 0.84);
+
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
+
+/* ------Plans We offer------- */
+
+div .PlanImgs {
+  width: 311px;
+  height: 200px;
+  border-radius: 15px;
+}
+.plans {
+  background: #d7d0d0;
+}
+.plans h1 {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 35px;
+}
+.plans p {
+  text-align: center;
+  font-size: 16px;
+}
+.card {
+  display: flex;
+}
+.row {
+  /* border: 1px solid black; */
+  border-radius: 15px;
+  margin: 50px;
+  padding: 5px 5px 20px;
+  box-shadow: 7px 7px 20px #ae9f9f;
+  transition: 1s;
+  background: white;
+}
+.row p {
+  text-align: left;
+  padding: 7px;
+  padding-bottom: 25px;
+  font-size: 12px;
+}
+
+.row:hover {
+  box-shadow: 0px 0px 40px rgb(0, 0, 0);
+}
+.LocationName{
+  text-align: center;
+}
+.card span{
+  font-size: 11px;
+  border: 1px  black;
+  color: #f44336;
+  padding: 1px 3px;
+}
+.plans .Learn{
+  text-decoration: none;
+  border-top: 1px solid;
+  padding: 10px 200px 7px 10px;
+  color: maroon;
+}
+
+
+
+

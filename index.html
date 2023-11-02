@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traveling with US</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <section>
+      <div class="header">
+        <nav>
+          <a href="index.html"><img src="imges/logo.png" alt="logo" /></a>
+          <div class="nav-links" id="navLinks">
+            <svg
+              class="fa"
+              width="24"
+              onclick="hidemenu()"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 6L12 12M12 12L6 18M12 12L18 18M12 12L6 6"
+                stroke="#141B34"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Plan Your Trip</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact US</a></li>
+            </ul>
+          </div>
+          <svg
+            class="fa"
+            width="24"
+            height="24"
+            onclick="showmenu()"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 5L20 5"
+              stroke="#141B34"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4 12L20 12"
+              stroke="#141B34"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4 19L20 19"
+              stroke="#141B34"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </nav>
+
+        <div class="text-box">
+          <h1>Plan Your Trip</h1>
+          <p>
+            Embark on a discovery-filled journey with our guide, unlocking
+            hidden gems and iconic landmarks to let your wanderlust<br />
+            lead you to new horizons and unforgettable experiences.
+          </p>
+          <a href="" class="btn">Visit Us to know More</a>
+        </div>
+      </div>
+    </section>
+
+    <!------Plans We offer------->
+    <section class="plans">
+      <div class="">
+        <h1>Traveling Plans We offer</h1>
+        <p>Statue of Unity, Dubai, Australia ect...</p>
+      </div>
+      <div class="card">
+        
+        <div class="row">
+          <img class="PlanImgs" src="imges/SoU.jpeg" alt="SoU">
+          <span>2 Days</span>
+          <span>Statue of Unity</span>
+          <h2 class="LocationName">Statue of Unity</h2>
+          <p>In SoU we coverd Statue of Unity,Sardar Sarovar Dam, Valley of Flowers (Bharat Van), The Cactus Garden,The Butterfly Garden ect....</p>
+          <a class="Learn" href="#">Learn more</a>
+        </div>
+
+        <div class="row">
+          <img class="PlanImgs" src="imges/Dubai.jpeg" alt="Dubai">
+          <span>20 Days</span>
+          <span>Dubai</span>
+          <h2 class="LocationName">Dubai</h2>
+          <p>In Dubai we coverd Burj Khalifa, The Dubai Mall, The Dubai Fountain, Palm Jumeirah, Dubai Marina ect...</p>
+          <a class="Learn" href="#">Learn more</a>
+        </div>
+
+        <div class="row">
+          
+          <img class="PlanImgs" src="imges/Australia.jpg" alt="Australia">
+          
+          <span>22 Days</span>
+          <span>Australia</span>
+          <h2 class="LocationName">Australia</h2>
+          <p>In Australia we coverd Sydney, New South Wales, Great Barrier Reef, Queensland, Melbourne, Victoria,Tasmania ect...</p>
+          <a class="Learn" href="#">Learn more</a>
+        </div>
+      </div>
+      
+    </section>
+
+    <!--------JS for Toggle menu-------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showmenu() {
+        navLinks.style.right = "0";
+      }
+      function hidemenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
